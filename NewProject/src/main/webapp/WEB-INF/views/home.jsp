@@ -1,53 +1,80 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!-- JSTL표준 태그 -->
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
+<!-- 한글깨짐 방지 -->
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!-- JSP에서 java로 생성될 때, 세션이 자동으로 생성되지 않도록 처리 -->
 <%@ page session="false" %>
 <!DOCTYPE html>
+<!-- lang 웹페이지 언어 선언 en:영어, ko:한국어 -->
 <html lang="en">
 <!--commit test -->
     <head>
-        <meta charset="utf-8" />
+        <!-- 한글깨짐 방지 -->
+        <meta charset="utf-8"/>
+        <!-- meta 태그 반응형 -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <!-- 웹 페이지에 대한 설명을 정의  -->
+        <meta name="description" content="my portfolio" />
+        <!-- 문서의 저자를 정의 -->
+        <meta name="author" content="seon young" />
+        
         <title>PROTFOLIO</title>
-        <link rel="icon" type="image/x-icon" href="resources/img/favicon.ico"/>
+        
         <!-- Font Awesome icons (free version)-->
+        <!-- 메인 화면의 아이콘 -->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
+        <!-- 구글 폰트2가지 링크 삽입 -->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- CSS 연결 -->
         <link href="resources/css/styles.css" rel="stylesheet" />
     </head>
+    
+    
     <body id="page-top">
+    
+    
         <!-- Navigation-->
+        <!-- side 메뉴  -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <!-- side 이미지 사진 -->
+            <!-- a태그를 이용하여 이미지 사진 영역 클릭 시 메인으로 이동되도록 설정 -->
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <!-- 반응형으로 동작하도록 화면 크기에 따라 다르게 설정해줌 -->
+                <!-- 화면에 표시되다가 Large부터는 보이지 않도록(xs,sm,md) -->
                 <span class="d-block d-lg-none">Clarence Taylor</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="resources/img/profile.jpg" alt="..." /></span>
+                <!-- 화면에서 보이지 않다가 Large부터는 보이도록(lg,xl,xxl)  -->
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="resources/img/profile.jpg" alt="내 사진" /></span>
             </a>
+            
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">기술</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
                 </ul>
             </div>
         </nav>
+        
+        
         <!-- Page Content-->
         <div class="container-fluid p-0">
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
-                        Clarence
-                        <span class="text-primary">Taylor</span>
+                   		     박
+                        <span class="text-primary">선영</span>
                     </h1>
                     <div class="subheading mb-5">
-                        3542 Berry Street � Cheyenne Wells, CO 80810 � (317) 585-8468 �
+                        3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
                         <a href="mailto:name@email.com">name@email.com</a>
                     </div>
                     <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
