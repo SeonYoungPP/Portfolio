@@ -36,13 +36,13 @@
     <body id="page-top">
     
     
-        <!-- Navigation-->
+        <!-- Navigation-->  
         <!-- side 메뉴  -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <!-- side 이미지 사진 -->
             <!-- a태그를 이용하여 이미지 사진 영역 클릭 시 메인으로 이동되도록 설정 -->
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <!-- 반응형으로 동작하도록 화면 크기에 따라 다르게 설정해줌 -->
+                <!-- 반응형으로 동작하도록 화면 크기에 따라 다르게 설정 -->
                 <!-- 화면에 표시되다가 Large부터는 보이지 않도록(xs,sm,md) -->
                 <span class="d-block d-lg-none">Clarence Taylor</span>
                 <!-- 화면에서 보이지 않다가 Large부터는 보이도록(lg,xl,xxl)  -->
