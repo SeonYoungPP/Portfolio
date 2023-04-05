@@ -38,6 +38,7 @@
     
         <!-- Navigation-->  
         <!-- side 메뉴  -->
+        <!-- 네비게이션 바, 원하는 너비에서 보여지도록 설정, 글자색 , 배경색, 상단고정  -->       
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <!-- side 이미지 사진 -->
             <!-- a태그를 이용하여 이미지 사진 영역 클릭 시 메인으로 이동되도록 설정 -->
@@ -49,14 +50,22 @@
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="resources/img/profile.jpg" alt="내 사진" /></span>
             </a>
             
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <!-- 화면의 크기가 Large보다 작아지면 적용된는 부분-->
+            <!-- 네비게이션 바의 요소를 숨겨두고있다가 펼칠 수 있도록  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- 사이드메뉴 아이콘 -->
+            <span class="navbar-toggler-icon"></span>           
+            </button>
+            <!-- 사이드메뉴에 들어갈 요소들의 class -->
+            <!--data-bs-target과  aria-controls와 연관-->
             <div class="collapse navbar-collapse" id="navbarResponsive">
+            <!-- ul클래스 , li클래스 , a태그 클래스 지정으로 페이지네이션(Pagination)을 만들어줌. -->
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">기술</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">technology</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
                 </ul>
@@ -64,20 +73,28 @@
         </nav>
         
         
-        <!-- Page Content-->
+        <!-- Page Content 네비게이션 요소에 따라 이동할 페이지 만들기 -->
+        <!-- 페이지를 하나의 div로 묶고 section으로 구분하여 id를 다르게 설정 -->
+        <!-- padding  0 -->
         <div class="container-fluid p-0">
+        
             <!-- About-->
+            <!-- section class이름은 동일  -->           
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
-                   		     박
+                    <!-- margin bottom 0 -->
+                    <h1 class="mb-0">  박
+                        <!-- text색상 변경 -->
                         <span class="text-primary">선영</span>
                     </h1>
+                    <!-- margin bottom 3rem -->
                     <div class="subheading mb-5">
-                        3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-                        <a href="mailto:name@email.com">name@email.com</a>
+                        	전화번호: (317) 585-8468 ·
+                        	이메일: <a href="mailto:name@email.com">name@email.com</a>
                     </div>
-                    <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                    <!-- margin bottom 3rem -->
+                    <p class="lead mb-5">자기소개 안녕하세요.</p>
+                  	<!-- 아이콘 삽입 -->
                     <div class="social-icons">
                         <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
@@ -86,19 +103,31 @@
                     </div>
                 </div>
             </section>
+            
+            <!-- 페이지를 구분해주기 위한 가로선 margin 0 -->
             <hr class="m-0" />
+            
             <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
+                    <!-- margin bottom 3rem -->
                     <h2 class="mb-5">Experience</h2>
+                    <!-- display flex 설정-->
+                    <!-- md크기부터 가로정렬, 양쪽 요소를 좌우에 붙이고 안쪽 요소들을 균일한 간격으로 배치 -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                         <!-- Flex Item 비율을 1로 지정   -->
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                            <!-- margin bottom 0 -->
+                            <h3 class="mb-0">1.Senior Web Developer</h3>
+                            <div class="subheading mb-3">2.Intelitec Solutions</div>
+                            <p>3.Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
                     </div>
+                    
+                    
+                    
+                    
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Web Developer</h3>
